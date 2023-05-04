@@ -12,7 +12,7 @@ Pure javascript class that will produce a configurable slideshow when passed a c
 ```
 
 here is an example with some config options set. This minimal config will produce a slideshow with no navbar or thum images or close icon.
-Arrow keyboard keys will advance slides and escape will close the whole show along with clicking away from image.
+Arrow keyboard keys will advance slides as well as clicking/tapping image itself, and escape will close the whole show along with clicking away from image.
 
 ```
 
