@@ -32,7 +32,42 @@ look just like the xslide_default.png example image but with a larger image cent
     
 
 ```
+Here is another example adding your own buttons to the side menu. This is an example taken from an implementation I have that sets the orientatin of an image permanently using a php script. But it could just rotate the image for viewing, make it do whatever.
 
+
+```
+    function showSlideAdditionalButtons(clickedThumb) {
+
+        let rot180 = `
+
+        <button id="rotate180" class="rotateIMG" data-deg="180" data-noticeid="SomeSpecialID" title="Rotate Image 180 degrees clockwise">
+
+            <img src="/img/rot180.png" />
+
+        </button>
+
+        `;
+
+        let rot90 = `
+
+            <button id="rotate90" class="rotateIMG" data-deg="90" data-noticeid="SomeSpecialID" title="Rotate Image 90 degrees clockwise">
+
+                <img src="/img/rot90.png" />
+
+            </button>
+
+        `;
+
+        let xslide = new xslide(pics);
+
+        slide.addSideButton(rot180);
+        slide.addSideButton(rot90);
+
+        xslide.setProp("imgStartIDX",clickedThumb.dataset.idx); // use data set idx value to show this image
+
+    }
+
+```
 There are several configuration options. Here is the config object with the default options when using only the 1st default example code above:
 
    
