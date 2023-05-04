@@ -64,6 +64,21 @@
 
         }
 
+        function showMinimalSlide() {
+
+            let pics = getPics(); // gets comma sep list of image paths to pass to class
+
+            console.log(pics);
+
+            let xslide = new xslide(pics);
+            xslide.setProp("enableEnlargeImage",false);
+            xslide.setProp("startSlidesEnlarged",true);
+            xslide.setProp("showNavBar",false);
+            xslide.setProp("noCloseButton",true);
+            xslide.startSlides();
+
+        }
+
     </script>
 
     <style>
