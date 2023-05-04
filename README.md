@@ -36,9 +36,9 @@ Here is another example adding your own buttons to the side menu. This is an exa
 
 
 ```
-    function showSlideAdditionalButtons(clickedThumb) {
+function showSlideAdditionalButtons(clickedThumb) {
 
-        let rot180 = `
+    let rot180 = `
 
         <button id="rotate180" class="rotateIMG" data-deg="180" data-id="SomeSpecialID" title="Rotate Image 180 degrees clockwise">
 
@@ -46,28 +46,28 @@ Here is another example adding your own buttons to the side menu. This is an exa
 
         </button>
 
-        `;
+    `;
 
-        let rot90 = `
+    let rot90 = `
 
-            <button id="rotate90" class="rotateIMG" data-deg="90" data-id="SomeSpecialID" title="Rotate Image 90 degrees clockwise">
+        <button id="rotate90" class="rotateIMG" data-deg="90" data-id="SomeSpecialID" title="Rotate Image 90 degrees clockwise">
 
-                <img src="/img/rot90.png" />
+            <img src="/img/rot90.png" />
 
-            </button>
+        </button>
 
-        `;
+    `;
 
-        let xslide = new xslide(pics);
+    let xslide = new xslide(pics);
 
-        slide.addSideButton(rot180);
-        slide.addSideButton(rot90);
+    xslide.addSideButton(rot180);
+    xslide.addSideButton(rot90);
 
-        xslide.setProp("imgStartIDX",clickedThumb.dataset.idx); // use data set idx value to show this image
-        
-        xslide.startSlides();
+    xslide.setProp("imgStartIDX",clickedThumb.dataset.idx); // use data set idx value to show this image
 
-    }
+    xslide.startSlides();
+
+}
 
 ```
 There are several configuration options. Here is the config object with the default options when using only the 1st default example code above:
