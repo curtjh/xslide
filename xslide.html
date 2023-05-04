@@ -4,7 +4,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />    
-    <script src="xslide.v2.js"></script>
+    <script src="xslide.js"></script>
     <script src="funcs.js"></script>
 
     <script>
@@ -47,7 +47,7 @@
             let pics = getPics(); // gets comma sep list of image paths to pass to class
             
             let xslide = new xslide(pics);
-            
+
             xslide.setProp("imgStartIDX",img.dataset.idx); // use data set idx value to show this image
 
             xslide.startSlides();
