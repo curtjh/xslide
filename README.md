@@ -64,6 +64,8 @@ Here is another example adding your own buttons to the side menu. This is an exa
         slide.addSideButton(rot90);
 
         xslide.setProp("imgStartIDX",clickedThumb.dataset.idx); // use data set idx value to show this image
+        
+        xslide.startSlides();
 
     }
 
