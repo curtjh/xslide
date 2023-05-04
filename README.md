@@ -1,6 +1,8 @@
 # xslide
 Javascript Slideshow Class
 
+Example implementation in xslide.html file.
+
 Pure javascript class that will produce a configurable slideshow when passed a comma seperated string of images. Example image of how this looks is in the xslide_default.png file. 
 
 
