@@ -32,7 +32,7 @@ look just like the xslide_default.png example image but with a larger image cent
     
 
 ```
-Here is another example adding your own buttons to the side menu. This is an example taken from an implementation I have that sets the orientatin of an image permanently using a php script (code not here). But it could just rotate the image for viewing, make it do whatever. (I didn't include these 'rotating' options in the class because I had this need to rotate them permenantly using php. It would be easy enoug to add built in 'for viewing only' rotating fucntionality in the class, so fork and make that happen if you wish)
+Here is another example adding your own buttons to the side menu. This is an example taken from an implementation I have that sets the orientatin of an image permanently using a php script (code not here). But it could just rotate the image for viewing, make it do whatever. See how this can look in 'example_other_buttons.png'. (I didn't include these 'rotating' options in the class because I had this need to rotate them permenantly using php. It would be easy enoug to add built in 'for viewing only' rotating fucntionality in the class, so fork and make that happen if you wish)
 
 
 ```
