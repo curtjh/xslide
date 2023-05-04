@@ -42,25 +42,25 @@
 
         }
 
-        function showDefaultSlide() {
+        function showDefaultSlide(clickedThumb) {
 
             let pics = getPics(); // gets comma sep list of image paths to pass to class
             
             let xslide = new xslide(pics);
 
-            xslide.setProp("imgStartIDX",img.dataset.idx); // use data set idx value to show this image
+            xslide.setProp("imgStartIDX",clickedThumb.dataset.idx); // use data set idx value to show this image
 
             xslide.startSlides();
 
         }
 
-        function showMinimalSlide() {
+        function showMinimalSlide(clickedThumb) {
 
             let pics = getPics(); // gets comma sep list of image paths to pass to class
 
             let xslide = new xslide(pics);
 
-            xslide.setProp("imgStartIDX",img.dataset.idx); // use data set idx value to show this image
+            xslide.setProp("imgStartIDX",clickedThumb.dataset.idx); // use data set idx value to show this image
             xslide.setProp("enableEnlargeImage",false);
             xslide.setProp("startSlidesEnlarged",true);
             xslide.setProp("showNavBar",false);
