@@ -26,7 +26,7 @@ look just like the xslide_default.png example image but with a larger image cent
     slide.setProp("showNavBar",false);
     slide.setProp("noCloseButton",true);
 
-    slide.slide.startSlides(); 
+    slide.startSlides(); 
     
 
 ```
