@@ -16,8 +16,9 @@
 
                 if(e.target.matches(".pic")) {
 
-                    showDefaultSlide(); // comment this out if below is uncommented
-                    //showMinimalSlide(); // uncomment to launch the minimal no buttons slides
+                    showDefaultSlide(e.target); // comment this out if below is uncommented
+                    //showMinimalSlide(e.target); // uncomment to launch the minimal no buttons slides
+                    //showSlideAdditionalButtons(e.target)
 
                 }
 
@@ -69,6 +70,41 @@
             xslide.startSlides();
 
         }
+
+        function showSlideAdditionalButtons(clickedThumb) {
+
+            let rot180 = `
+        
+            <button id="rotate180" class="rotateIMG" data-deg="180" data-noticeid="SomeSpecialID" title="Rotate Image 180 degrees clockwise">
+            
+                <img src="/img/rot180.png" />
+            
+            </button>
+
+            `;
+
+            let rot90 = `
+
+                <button id="rotate90" class="rotateIMG" data-deg="90" data-noticeid="SomeSpecialID" title="Rotate Image 90 degrees clockwise">
+                
+                    <img src="/img/rot90.png" />
+                
+                </button>
+
+            `;
+
+            let xslide = new xslide(pics);
+
+            slide.addSideButton(rot180);
+            slide.addSideButton(rot90);
+
+            xslide.setProp("imgStartIDX",clickedThumb.dataset.idx); // use data set idx value to show this image
+
+            xslide.startSlides();
+
+        }
+
+        
 
     </script>
 
