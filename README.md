@@ -13,7 +13,7 @@ Pure javascript class that will produce a configurable slideshow when passed a c
 There are several configuration options. Here is the config object with the default options when using only the code above:
 
 ```
-    XslideConfigX = {
+   
 
         imgList: null // comma sep list of images paths to dispaly in slideshow
         ,maxImages: 20 // list will be culled to this number if it is greater. Extras will be ignored.
@@ -67,5 +67,6 @@ There are several configuration options. Here is the config object with the defa
         ,otherButtons: [] // add additional buttons. this is populated using the "addButton" and would be added underneath the "close" button or in that area if htere isn't one
         // buttons will be 40px by 40px, so just an image, and a web accessible image/htmlcode should be added to the button. Title can be added too
 
-    }
+
+
 ```
