@@ -40,7 +40,7 @@ Here is another example adding your own buttons to the side menu. This is an exa
 
         let rot180 = `
 
-        <button id="rotate180" class="rotateIMG" data-deg="180" data-noticeid="SomeSpecialID" title="Rotate Image 180 degrees clockwise">
+        <button id="rotate180" class="rotateIMG" data-deg="180" data-id="SomeSpecialID" title="Rotate Image 180 degrees clockwise">
 
             <img src="/img/rot180.png" />
 
@@ -50,7 +50,7 @@ Here is another example adding your own buttons to the side menu. This is an exa
 
         let rot90 = `
 
-            <button id="rotate90" class="rotateIMG" data-deg="90" data-noticeid="SomeSpecialID" title="Rotate Image 90 degrees clockwise">
+            <button id="rotate90" class="rotateIMG" data-deg="90" data-id="SomeSpecialID" title="Rotate Image 90 degrees clockwise">
 
                 <img src="/img/rot90.png" />
 
