@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />    
+    <script src="xslide.v2.js"></script>
+    <script src="funcs.js"></script>
+
+    <script>
+
+        // add click events to the '.pic' class to launch slides
+        document.addEventListener('DOMContentLoaded', () => {
+
+            document.addEventListener('click', (e) => {
+
+                if(e.target.matches(".pic")) {
+
+                    showDefaultSlide(); // comment this out if below is uncommented
+                    //showMinimalSlide(); // uncomment to launch the minimal no buttons slides
+
+                }
+
+            });
+
+        });
+
+        function getPics() {   
+
+            let list = [];
+
+            var thePics = document.getElementsByClassName("pic");
+
+            for (var i = 0; i < thePics.length; i++) {
+
+                list.push(thePics[i].src); // create array of pic src paths
+                thePics[i].dataset.idx = i; // set an idx data attribute value to i so this value can be passed to open this pic when clicked
+
+            }
+            
+            return list.toString();
+
+        }
+
+        function showDefaultSlide() {
+
+            let pics = getPics(); // gets comma sep list of image paths to pass to class
+
+            console.log(pics);
+            
+            let xslide = new xslide(pics);
+            xslide.startSlides();
+
+        }
+
+        function showSlide() {
+
+            let pics = getPics(); // gets comma sep list of image paths to pass to class
+
+            console.log(pics);
+
+            let xslide = new xslide(pics);
+            xslide.startSlides();
+
+        }
+
+    </script>
+
+    <style>
+
+        body {
+
+            background: gray;
+
+        }
+
+        .pics {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            margin: auto;
+
+
+        }
+
+        .pics > div {
+
+            width: 100%; 
+            padding: 15px; 
+            /* border: 1px solid red; */
+            text-align: center;
+            cursor: pointer;
+
+        }
+
+        .pic {
+
+            height: 85px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h2 style="width: 100%; color: antiquewhite; text-align: center;">xslide Class</h2>
+
+    <div id='picContainer' class="pics">
+
+        <div>
+        <img class="pic" src="/img/0.png" />
+        </div>
+
+        <div>
+        <img class="pic" src="/img/1.png" />
+        </div>
+
+        <div>
+        <img class="pic" src="/img/2.png" />
+        </div>
+
+        <div>
+        <img class="pic" src="/img/3.png" />
+        </div>
+
+        <div>
+        <img class="pic" src="/img/4.png" />
+        </div>
+        <div>
+        <img class="pic" src="/img/5.png" />
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
