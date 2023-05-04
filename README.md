@@ -10,6 +10,24 @@ Pure javascript class that will produce a configurable slideshow when passed a c
     slide.slide.startSlides();
     
 ```
+
+here is an example with some config options set. This config will produce a slideshow with no navbar or thum images.
+Only a close icon. Arrow keys will advance slides and escape will close the whole show along with clicking away from image.
+
+```
+
+    let pics = getPics(); // helper function you would create to get comma sep list of image paths to pass to class
+    
+    let slide = new xslide(pics);
+    slide.setProp("enableEnlargeImage",false);
+    slide.setProp("startSlidesEnlarged",true);
+    slide.setProp("showNavBar",false);
+    slide.setProp("noCloseButton",true);
+
+    slide.slide.startSlides();
+    
+
+```
 There are several configuration options. Here is the config object with the default options when using only the code above:
 
 ```
