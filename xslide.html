@@ -45,20 +45,7 @@
         function showDefaultSlide() {
 
             let pics = getPics(); // gets comma sep list of image paths to pass to class
-
-            console.log(pics);
             
-            let xslide = new xslide(pics);
-            xslide.startSlides();
-
-        }
-
-        function showSlide() {
-
-            let pics = getPics(); // gets comma sep list of image paths to pass to class
-
-            console.log(pics);
-
             let xslide = new xslide(pics);
             xslide.startSlides();
 
@@ -67,8 +54,6 @@
         function showMinimalSlide() {
 
             let pics = getPics(); // gets comma sep list of image paths to pass to class
-
-            console.log(pics);
 
             let xslide = new xslide(pics);
             xslide.setProp("enableEnlargeImage",false);
