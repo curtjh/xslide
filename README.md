@@ -1,0 +1,2 @@
+# xslide
+Javascript Slideshow Class
