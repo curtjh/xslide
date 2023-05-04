@@ -7,14 +7,15 @@ Pure javascript class that will produce a configurable slideshow when passed a c
 ```
     let pics = getPics(); // helper function you would create to get comma sep list of image paths to pass to class
     
-    let slide = new xslide(pics);
-    slide.slide.startSlides();
+    let xslide = new xslide(pics);
+    xslide.startSlides();
     
 ```
 
 here is an example with some config options set. This minimal config will produce a slideshow with no navbar or thumb images or close icon.
 Arrow keyboard keys will advance slides as well as clicking/tapping image itself, and escape will close the whole show along with clicking away from image. This ill 
 look just like the xslide_default.png example image but with a larger image centered on screen with no buttons at all.
+
 ```
 
     let pics = getPics(); // helper function you would create to get comma sep list of image paths to pass to class
@@ -29,8 +30,8 @@ look just like the xslide_default.png example image but with a larger image cent
     
 
 ```
-There are several configuration options. Here is the config object with the default options when using only the 1st default example code above:
 
+There are several configuration options. Here is the config object with the default options when using only the 1st default example code above:
 
    
 ```
